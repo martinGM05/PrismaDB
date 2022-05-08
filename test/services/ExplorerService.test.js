@@ -5,4 +5,10 @@ describe("Test for Explorer Service", () => {
         const explorers = await ExplorerService.getAllExplorers();
         expect(explorers.length).toBeGreaterThan(0);
     })
+
+    test("2) Test getExplorerById", async () => {
+        const id = 1;
+        const explorer = await ExplorerService.getExplorerById(id);
+        expect(explorer.id).toBe(id);
+    })
 })
