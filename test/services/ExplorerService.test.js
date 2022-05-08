@@ -10,6 +10,7 @@ describe("Test for Explorer Service", () => {
     test("2) Test getExplorerById", async () => {
         const id = 1;
         const explorer = await ExplorerService.getExplorerById(id);
+        console.log(explorer)
         expect(explorer.id).toBe(id);
     })
 })
