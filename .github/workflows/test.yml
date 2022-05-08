@@ -28,5 +28,4 @@ jobs:
       - run: npm install
       - run: npx prisma migrate dev --name init
       - run: npm run seed
-      - run: npm run seedCommander
       - run: npm run test

@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 (async function main() {
     try {
-        const woopa = await prisma.comanders.upsert({
+        const Cwoopa = await prisma.comanders.upsert({
             where: { name: 'Juan' },
             update: {},
             create: {
@@ -14,7 +14,7 @@ const prisma = new PrismaClient();
             },
         });
 
-        const woopa1 = await prisma.comanders.upsert({
+        const Cwoopa1 = await prisma.comanders.upsert({
             where: { name: 'Ernesto' },
             update: {},
             create: {
@@ -25,7 +25,7 @@ const prisma = new PrismaClient();
             },
         });
 
-        const woopa2 = await prisma.comanders.upsert({
+        const Cwoopa2 = await prisma.comanders.upsert({
             where: { name: 'Kevin' },
             update: {},
             create: {
@@ -36,7 +36,7 @@ const prisma = new PrismaClient();
             },
         });
 
-        const woopa3 = await prisma.comanders.upsert({
+        const Cwoopa3 = await prisma.comanders.upsert({
             where: { name: 'Jose' },
             update: {},
             create: {
@@ -47,7 +47,7 @@ const prisma = new PrismaClient();
             },
         });
 
-        const woopa4 = await prisma.comanders.upsert({
+        const Cwoopa4 = await prisma.comanders.upsert({
             where: { name: 'Jocelyn' },
             update: {},
             create: {
