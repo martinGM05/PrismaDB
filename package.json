@@ -9,7 +9,9 @@
   },
   "scripts": {
     "test": "node ./node_modules/jest/bin/jest.js",
-    "start": "node lib/server.js"
+    "start": "node lib/server.js",
+    "sedd": "node prisma/seed.js",
+    "seddCommander": "node prisma/seedCommander.js"
   },
   "repository": {
     "type": "git",
