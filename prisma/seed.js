@@ -109,6 +109,42 @@ const process = require("process");
             },
         });
 
+        await prisma.missionCommander.upsert({
+            where: { name: "Carlo" },
+            update: {},
+            create: {
+                name: "Carlo",
+                username: "carloGilmar",
+                mainStack: "Elixir",
+                currentEnrollment: true,
+                hasAzureCertification: true,
+            },
+        });
+
+        await prisma.missionCommander.upsert({
+            where: { name: "Fernanda" },
+            update: {},
+            create: {
+                name: "Fernanda",
+                username: "imosh",
+                mainStack: "Java",
+                currentEnrollment: true,
+                hasAzureCertification: true,
+            }
+        })
+
+        await prisma.missionCommander.upsert({
+            where: { name: "Rodrigo" },
+            update: {},
+            create: {
+                name: "Rodrigo",
+                username: "rodrigoMtz",
+                mainStack: "Javascript",
+                currentEnrollment: true,
+                hasAzureCertification: true,
+            }
+        })
+
         console.log("Create 3 explorers");
     } catch (e) {
         console.error(e);
