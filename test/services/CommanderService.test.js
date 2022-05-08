@@ -1,5 +1,4 @@
 const CommanderService = require("../../lib/services/CommanderService")
-const Commander = require("../../lib/models/CommanderModel")
 
 describe("Test for Commander Service", () => {
 
@@ -13,5 +12,4 @@ describe("Test for Commander Service", () => {
         const commander = await CommanderService.getCommanderById(id);
         expect(commander.id).toBe(id);
     })
-
 })
