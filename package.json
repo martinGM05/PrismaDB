@@ -1,0 +1,23 @@
+{
+  "name": "prismadb",
+  "version": "1.0.0",
+  "description": "This is a excersice from LaunchX",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinGM05/PrismaDB.git"
+  },
+  "author": "Martin Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinGM05/PrismaDB/issues"
+  },
+  "homepage": "https://github.com/martinGM05/PrismaDB#readme"
+}
