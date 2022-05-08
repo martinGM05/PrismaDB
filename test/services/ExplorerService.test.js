@@ -1,5 +1,5 @@
 const ExplorerService = require("../../lib/services/ExplorerService")
-const Explorer = require("../../lib/models/explorerModel")
+const Explorer = require("../../lib/models/ExplorerModel")
 
 describe("Test for Explorer Service", () => {
     test("1) Test getAllExplorers", async () => {
