@@ -27,6 +27,6 @@ jobs:
           node-version: '18.x'
       - run: npm install
       - run: npx prisma migrate dev --name init
-      - run: node prisma/seed.js
-      - run: node prisma/seedCommander.js
+      - run: npm run seed
+      - run: npm run seedCommander
       - run: npm run test
