@@ -19,3 +19,12 @@ model Explorer {
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
+
+model Comanders {
+  id Int @id @default(autoincrement())
+  name String
+  lang String
+  missionCommander String
+  enrollments Int
+  hasCertification Boolean @default(false)
+}
