@@ -22,7 +22,7 @@ model Explorer {
 
 model Comanders {
   id Int @id @default(autoincrement())
-  name String
+  name String @unique
   lang String
   missionCommander String
   enrollments Int
