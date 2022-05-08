@@ -1,10 +1,11 @@
-const { PrismaClient } = require('@prisma/client');
+const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
+const process = require("process");
 
 (async function main() {
     try {
-        const Cwoopa = await prisma.comanders.upsert({
-            where: { name: 'Juan' },
+        await prisma.comanders.upsert({
+            where: { name: "Juan" },
             update: {},
             create: {
                 name: "Juan",
@@ -14,8 +15,8 @@ const prisma = new PrismaClient();
             },
         });
 
-        const Cwoopa1 = await prisma.comanders.upsert({
-            where: { name: 'Ernesto' },
+        await prisma.comanders.upsert({
+            where: { name: "Ernesto" },
             update: {},
             create: {
                 name: "Ernesto",
@@ -25,8 +26,8 @@ const prisma = new PrismaClient();
             },
         });
 
-        const Cwoopa2 = await prisma.comanders.upsert({
-            where: { name: 'Kevin' },
+        await prisma.comanders.upsert({
+            where: { name: "Kevin" },
             update: {},
             create: {
                 name: "Kevin",
@@ -36,8 +37,8 @@ const prisma = new PrismaClient();
             },
         });
 
-        const Cwoopa3 = await prisma.comanders.upsert({
-            where: { name: 'Jose' },
+        await prisma.comanders.upsert({
+            where: { name: "Jose" },
             update: {},
             create: {
                 name: "Jose",
@@ -47,8 +48,8 @@ const prisma = new PrismaClient();
             },
         });
 
-        const Cwoopa4 = await prisma.comanders.upsert({
-            where: { name: 'Jocelyn' },
+        await prisma.comanders.upsert({
+            where: { name: "Jocelyn" },
             update: {},
             create: {
                 name: "Jocelyn",
@@ -56,9 +57,9 @@ const prisma = new PrismaClient();
                 missionCommander: "Carlo",
                 enrollments: 30,
             },
-        })
+        });
 
-        console.log('Create 5 explorers');
+        console.log("Create 5 explorers");
     } catch (e) {
         console.error(e);
         process.exit(1);
