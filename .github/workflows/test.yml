@@ -18,7 +18,7 @@ jobs:
         ports:
           - 5432:5432
     env:
-      DATABASE_URL: postgresql://Martin:Holasoymartin@localhost:5432/explorers_api?schema=public
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/explorers_api?schema=public
       PORT: 3030
     steps:
       - uses: actions/checkout@v2
