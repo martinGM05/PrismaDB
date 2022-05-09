@@ -32,6 +32,7 @@ There are some scripts in the package.json to speed up some commands:
 ## The logic distribution of this api is like this
 ```mermaid
 graph TD;
+    Database --> Prisma
     Prisma --> ExplorerService
     Prisma --> CommanderService
     Prisma --> MissionCommanderService
